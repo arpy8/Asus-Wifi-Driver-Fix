@@ -1,1 +1,13 @@
 /.venv
+/__pycache__
+*test*
+*.log
+debug_screenshots/
+.pytest_cache/
+*.pyc
+.coverage
+
+connect_wifi.py
+
+*temp*
+*test*

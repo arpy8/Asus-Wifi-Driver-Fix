@@ -1,0 +1,31 @@
+[project]
+name = "wifi-driver"
+version = "0.1.0"
+description = "Automated WiFi driver management tool for Windows"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyautogui>=0.9.54",
+    "opencv-python>=4.5.0",
+    "Pillow>=8.0.0",
+    "pyuac>=0.0.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
